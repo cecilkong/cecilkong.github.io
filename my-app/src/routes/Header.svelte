@@ -35,7 +35,7 @@
 				<a href="/3D">3D</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/my-about' ? 'page' : undefined}>
-				<a href="/my-about">About Me</a>
+				<a href="/my-about">About</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">

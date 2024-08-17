@@ -17,19 +17,21 @@
         journaling, and listening to music.`;
 </script>
 
-<div class="text-column">
-    <picture>
-        <!-- <source srcset={welcome} type="image/webp" /> -->
-        <img src={pfp_fallback} alt="About Photo" />
-    </picture>
-
-	<p>
-		Hi, I'm Cecil.
-	</p>
-
-    <p>
-        {@html bio}
-	</p>
+<div class="about">
+    <div class="text-column">
+        <picture>
+            <!-- <source srcset={welcome} type="image/webp" /> -->
+            <img src={pfp_fallback} alt="About Photo" />
+        </picture>
+    </div>
+    <div class="text-column">
+        <p>
+            Hi, I'm Cecil.
+        </p>
+        <p>
+            {@html bio}
+        </p>
+    </div>
 </div>
 
 <style>
@@ -37,11 +39,18 @@
 		/* display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		flex: 0.6; */
-        /* max-width: 10%;
-        max-height: 10%; */
-        height: 30%;
-        width: 30%;
+		align-items: center; */
+        align-self: center;
+        width: 80%;
 	}
+
+    .about
+    {
+        margin: 15% 4% 15% 4%;
+        display: flex;
+        flex-direction: row;
+		justify-content: center;
+        flex: 0.2;
+		align-items: center;
+    }
 </style>
