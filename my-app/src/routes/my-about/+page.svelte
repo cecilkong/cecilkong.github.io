@@ -5,7 +5,7 @@
 
 <script lang="ts">
 	// import pfp from '$lib/images/svelte-welcome.webp';
-	import pfp_fallback from '$lib/images/pfp_fallback.jpg';
+	import pfp_fallback from '$lib/images/about/pfp-fallback.jpg';
 
     let bio = 
         `I’m a senior studying <strong>Computer Science</strong> with an emphasis in games along with a minor in 
