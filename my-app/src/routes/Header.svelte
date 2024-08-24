@@ -60,9 +60,6 @@
 				</li>
 			</ul>
 		</div>
-		<!-- <svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg> -->
 	</nav>
 
 	<!-- <div class="corner">
@@ -135,11 +132,12 @@
 	} */
 
 	path {
-		fill: var(--background);
 		/* border-style: dotted; */
+		fill: var(--background);
 	}
 
 	ul {
+		/* border-style: dotted; */
 		position: relative;
 		padding: 0;
 		margin: 0;
@@ -148,35 +146,29 @@
 		justify-content: space-between;
 		align-items: center;
 		list-style: none;
-		/* background: var(--background); */
 		background-size: contain;
-		/* border-style: dotted; */
 		flex: auto;
 	}
 
-	.page-links 
-	{
+	.page-links {
 		/* border-style: solid; */
 		/* margin-left: 50px; */
 	}
 
-	li 
-	{
+	li {
+		/* border-style: dotted; */
 		position: relative;
 		height: 100%;
 		/* border-style: dotted; */
-		/* padding-left: 2vw; */
 		padding-right: 2.5vw;
 	}
 
-	.no-padding
-	{
+	.no-padding {
 		padding: 0;
 		font-weight: 100;
 	}
 
-	.cecil 
-	{
+	.cecil {
 		font-style: normal;
 		font-weight: 100;
 		font-size: 1.2rem;
@@ -195,6 +187,7 @@
 	}
 
 	nav a {
+		/* border-style: dotted; */
 		display: flex;
 		height: 100%;
 		align-items: center;
@@ -206,7 +199,6 @@
 		letter-spacing: 0.05em;
 		text-decoration: none;
 		transition: color 0.2s linear;
-		/* border-style: dotted; */
 	}
 
 	a:hover {

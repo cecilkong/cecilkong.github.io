@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="This is my home page." />
+	<meta name="description" content="Home Page" />
 </svelte:head>
 
 <script lang>
@@ -68,25 +68,21 @@
 
 
 <style>
-	.intro 
-	{
+	.intro {
 		margin: 10vh 0vw 5vh 0vw;
 	}
 
-	.thumbnail 
-	{
+	.thumbnail {
 		margin: 1% 0% 1% 0%;
 	}
 
-	:global(body) 
-	{
+	:global(body) {
 		background-color: #F1F1F1;
 		color: #221D1A;
 		transition: background-color 0.3s;
 	}
 
-	:global(body.dark-mode) 
-	{
+	:global(body.dark-mode) {
 		background-color: #221D1A;
 		color: #F1F1F1;
 	}

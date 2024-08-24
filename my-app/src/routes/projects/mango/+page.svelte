@@ -1,6 +1,6 @@
 <svelte:head>
-	<!-- <title>Mango</title>
-	<meta name="description" content="This is my home page." /> -->
+	<title>Mango Goes To Mewsic School</title>
+	<meta name="description" content="Project page for Mango Goes To Mewsic School" />
 </svelte:head>
 
 <script lang="ts">
@@ -16,6 +16,7 @@
 </script>
 
 <ProjectPage
+    name = "Mango Goes To Mewsic School"
     cover = {mango}
     role = "Co-Developer"
     tools = "Unity, Perforce, JetBrains Rider, Clip Studio Paint"

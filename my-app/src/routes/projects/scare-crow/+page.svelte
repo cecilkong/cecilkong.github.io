@@ -1,17 +1,18 @@
 <svelte:head>
-	<!-- <title>Mango</title>
-	<meta name="description" content="This is my home page." /> -->
+	<title>Scare Crow</title>
+	<meta name="description" content="Project page for Scare Crow" />
 </svelte:head>
 
 <script lang="ts">
-    import gma from '$lib/images/projects/scare-crow.png'
+    import scare_crow from '$lib/images/projects/scare-crow.png'
     import ProjectPage from '../../components/ProjectPage.svelte';
     let desc = 
         `wip scarecrow`;
 </script>
 
 <ProjectPage
-    cover = {gma}
+    name = "Scare Crow"
+    cover = {scare_crow}
     role = "Programmer, Artist"
     tools = "Unity/C#, Perforce, Procreate"
     timeline = "June 2024 - Present"

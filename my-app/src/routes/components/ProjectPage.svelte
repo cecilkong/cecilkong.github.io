@@ -1,9 +1,10 @@
 <svelte:head>
-	<!-- <title>Home</title> -->
-	<!-- <meta name="description" content="This is my home page." /> -->
+	<title>{name}</title>
+	<meta name="description" content="Project page for Mango Goes To Mewsic School">
 </svelte:head>
 
 <script>
+    export let name;
 	export let cover;
 	export let role;
 	export let tools;
@@ -34,47 +35,32 @@
 </div>
 
 <style>
-    /* .cover {
-        max-height: 30%;
-    } */
-
 	img {
         align-self: center;
         width: 100%;
         max-height: 400px;
 	}
 
-    .proj-page
-    {
-        /* display: flex; */
-        /* flex-direction: row; */
-		/* justify-content: space-between; */
+    .proj-page {
 		border-style: dotted;
 		background-color: #E5E4E4;
         margin: 2vh 2vw 2vh 2vw;
     }
 
-    .summary 
-    {
+    .summary {
         display: flex;
         flex-direction: row;
     }
 
-    .stats
-    {
+    .stats {
 		border-style: dotted;
         align-self: flex-start;
 		width: 40%;
-		/* text-align: end; */
-        /* margin: 0% 2% 0% 2%; */
     }
 
-	.description
-    {
+	.description {
 		border-style: dotted;
         align-self: flex-end;
 		width: 60%;
-		/* text-align: end; */
-        /* margin: 0% 2% 0% 2%; */
     }
 </style>

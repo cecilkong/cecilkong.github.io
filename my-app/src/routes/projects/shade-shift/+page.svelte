@@ -1,10 +1,10 @@
 <svelte:head>
-	<!-- <title>Mango</title>
-	<meta name="description" content="This is my home page." /> -->
+	<title>Shade Shift</title>
+	<meta name="description" content="Project page for Shade Shift" />
 </svelte:head>
 
 <script lang="ts">
-    import gma from '$lib/images/projects/shade-shift.png'
+    import ss from '$lib/images/projects/shade-shift.png'
     import ProjectPage from '../../components/ProjectPage.svelte';
     let desc = 
         `Shift between the shades to navigate your way through 11 unique platforming puzzles filled 
@@ -16,7 +16,8 @@
 </script>
 
 <ProjectPage
-    cover = {gma}
+    name = "Shade Shift"
+    cover = {ss}
     role = "Programmer, level designer"
     tools = "Unity/C#, Git"
     timeline = "July 2022"

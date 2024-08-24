@@ -1,6 +1,6 @@
 <svelte:head>
-	<!-- <title>Mango</title>
-	<meta name="description" content="This is my home page." /> -->
+	<title>Grandma Green</title>
+	<meta name="description" content="Project page for Grandma Green" />
 </svelte:head>
 
 <script lang="ts">
@@ -15,6 +15,7 @@ This game was created over the course of two semesters with a 37-student team. `
 </script>
 
 <ProjectPage
+    name = "Grandma Green"
     cover = {gma}
     role = "Concept & UI Artist"
     tools = "Clip Studio Paint"

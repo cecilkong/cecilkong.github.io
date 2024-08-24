@@ -1,6 +1,6 @@
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="This is my home page." />
+	<title>2D Works</title>
+	<meta name="description" content="2D Works Page" />
 </svelte:head>
 
 <script lang>
@@ -46,8 +46,8 @@
         margin: 3%;
 	}
 
-    .gallery
-    {
+    .gallery {
+        /* border-style: dotted; */
         /* margin: 15% 4% 15% 4%; */
         display: flex;
         flex-direction: row;
@@ -56,8 +56,7 @@
 		align-items: center; */
     }
 
-    .art-col
-    {
+    .art-col {
         /* margin: 15% 4% 15% 4%; */
         display: flex;
         flex-direction: column;

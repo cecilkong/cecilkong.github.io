@@ -1,8 +1,3 @@
-<svelte:head>
-	<!-- <title>Home</title> -->
-	<!-- <meta name="description" content="This is my home page." /> -->
-</svelte:head>
-
 <script>
 	export let image;
 	export let title;
@@ -30,20 +25,18 @@
         width: 100%;
 	}
 
-    .proj-container
-    {
+    .proj-container {
+        /* border-style: dotted; */
         display: flex;
         flex-direction: row;
-		/* border-style: dotted; */
 		background-color: #E5E4E4;
     }
 
-    .proj-thumbnail
-    {
+    .proj-thumbnail {
+        /* border-style: dotted; */
 		width: 65%;
 		height: 220px;
 		overflow: hidden;
-		/* border-style: dotted; */
     }
 
     :global(.proj-container.dark-mode) {
@@ -51,9 +44,8 @@
 		color: #F1EDE7;
 	}
 
-	.proj-desc
-    {
-		/* border-style: dotted; */
+	.proj-desc {
+        /* border-style: dotted; */
 		width: 35%;
 		text-align: end;
         margin: 1% 3% 1% 3%;

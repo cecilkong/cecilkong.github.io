@@ -1,10 +1,10 @@
 <svelte:head>
-	<!-- <title>Mango</title>
-	<meta name="description" content="This is my home page." /> -->
+	<title>Saleblazers</title>
+	<meta name="description" content="Project page for Saleblazers" />
 </svelte:head>
 
 <script lang="ts">
-    import gma from '$lib/images/projects/saleblazers.png'
+    import saleblazers from '$lib/images/projects/saleblazers.png'
     import ProjectPage from '../../components/ProjectPage.svelte';
     let desc = 
         `Saleblazers is an open-world multiplayer shopkeeping survival game where anything—from pistols to 
@@ -16,7 +16,8 @@
 </script>
 
 <ProjectPage
-    cover = {gma}
+    name = "Saleblazers"
+    cover = {saleblazers}
     role = "Gameplay Programming Intern"
     tools = "Unity/C#, Perforce, Visual Studio"
     timeline = "May 2023 - August 2023"
