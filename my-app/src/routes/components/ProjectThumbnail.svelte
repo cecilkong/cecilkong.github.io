@@ -11,18 +11,18 @@
     export let page_link;
 </script>
 
-<div class="proj-container">
-    <div class="proj-thumbnail">
-        <a href={page_link}>
-            <img src={image} alt="{title} Thumbnail" />
-        </a>
+<a href={page_link}>
+    <div class="proj-container">
+        <div class="proj-thumbnail">
+                <img src={image} alt="{title} Thumbnail" />
+        </div>
+        <div class="proj-desc">
+            <p>{title}</p>
+            <p>{role}</p>
+            <p>{time}</p>
+        </div>
     </div>
-    <div class="proj-desc">
-        <p>{title}</p>
-        <p>{role}</p>
-        <p>{time}</p>
-    </div>
-</div>
+</a>
 
 <style>
 	img {
