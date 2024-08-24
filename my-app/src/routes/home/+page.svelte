@@ -14,7 +14,7 @@
     // import lechord from '$lib/images/projects/lechord.png'
 </script>
 
-<p>
+<p class="intro">
 	hi, i'm cecil. i code and draw.
 </p>
 
@@ -24,43 +24,43 @@
 			image={mango} 
 			title="Mango Goes To Mewsic School" 
 			role="Co-Developer" 
-			time="january 2023 - june 2023" 
+			time="January 2023 - June 2023" 
 			page_link="/projects/mango"
 		/>
 	</div>
 	<div class="thumbnail">
 		<ProjectThumbnail 
 			image={gma_green} 
-			title="grandma green" 
-			role="concept artist" 
-			time="june 2022 - june 2023" 
+			title="Grandma Green" 
+			role="Concept Artist, UI Artist" 
+			time="June 2022 - June 2023" 
 			page_link="/projects/grandma-green"
 		/>
 	</div>
 	<div class="thumbnail">
 		<ProjectThumbnail 
 			image={saleblazers} 
-			title="saleblazers" 
-			role="gameplay programming intern" 
-			time="may 2023 - august 2023" 
+			title="Saleblazers" 
+			role="Gameplay Programming Intern" 
+			time="May 2023 - August 2023" 
 			page_link="/projects/saleblazers"
 		/>
 	</div>
 	<div class="thumbnail">
 		<ProjectThumbnail 
 			image={shade_shift} 
-			title="shade shift" 
-			role="programmer, designer" 
-			time="july 2022" 
+			title="Shade Shift" 
+			role="Programmer, Designer" 
+			time="July 2022" 
 			page_link="/projects/shade-shift"
 		/>
 	</div>
 	<div class="thumbnail">
 		<ProjectThumbnail 
 			image={scare_crow} 
-			title="scare-crow" 
-			role="gameplay programmer" 
-			time="june 2024 - current" 
+			title="Scare Crow" 
+			role="Gameplay Programmer" 
+			time="June 2024 - Current" 
 			page_link="/projects/scare-crow"
 		/>
 	</div>
@@ -68,16 +68,26 @@
 
 
 <style>
-	.thumbnail {
+	.intro 
+	{
+		margin: 10vh 0vw 5vh 0vw;
+	}
+
+	.thumbnail 
+	{
 		margin: 1% 0% 1% 0%;
 	}
-	:global(body) {
-		background-color: #F1EDE7;
+
+	:global(body) 
+	{
+		background-color: #F1F1F1;
 		color: #221D1A;
-		transition: background-color 0.3s
+		transition: background-color 0.3s;
 	}
-	:global(body.dark-mode) {
+
+	:global(body.dark-mode) 
+	{
 		background-color: #221D1A;
-		color: #F1EDE7;
+		color: #F1F1F1;
 	}
 </style>
