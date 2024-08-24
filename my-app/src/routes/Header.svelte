@@ -4,6 +4,7 @@
 	import github from '$lib/images/github.svg';
 	import star_dark from '$lib/images/nav/star-dark.png'
 	import star_light from '$lib/images/nav/star-light.png'
+	import Button from './components/Button.svelte'
 </script>
 
 <header>
@@ -19,8 +20,8 @@
 		</svg> -->
 		<div class="title">
 			<ul>
-				<li aria-current={$page.url.pathname === '/home' ? 'page' : undefined}>
-					<a href="/home">Cecil Kong</a>
+				<li class="no-padding">
+					<a href="/home" class="cecil">Cecil Kong</a>
 				</li>
 			</ul>
 		</div>
@@ -35,22 +36,27 @@
 				<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
 					<a href="/sverdle">Sverdle</a>
 				</li> -->
-				<li aria-current={$page.url.pathname === '/home' ? 'page' : undefined}>
+
+				<!-- <li aria-current={$page.url.pathname === '/home' ? 'page' : undefined}> -->
+				<li>
 					<a href="/home">projects</a>
 				</li>
-				<li aria-current={$page.url.pathname === '/2D' ? 'page' : undefined}>
+				<!-- <li aria-current={$page.url.pathname === '/2D' ? 'page' : undefined}> -->
+				<li>
 					<a href="/2D">2D</a>
 				</li>
-				<li aria-current={$page.url.pathname === '/3D' ? 'page' : undefined}>
+				<!-- <li> aria-current={$page.url.pathname === '/3D' ? 'page' : undefined}> -->
+				<li>
 					<a href="/3D">3D</a>
 				</li>
-				<li aria-current={$page.url.pathname === '/my-about' ? 'page' : undefined}>
+				<!-- <li aria-current={$page.url.pathname === '/my-about' ? 'page' : undefined}> -->
+				<li>
 					<a href="/my-about">About</a>
 				</li>
-				<li aria-current={$page.url.pathname === '/home' ? 'page' : undefined}>
-					<a href="/home">
+				<li class="no-padding">
+					<Button>
 						<img src={star_dark} class="color-mode" alt="Light/Dark Mode Toggle Icon" />
-					</a>
+					</Button>
 				</li>
 			</ul>
 		</div>
@@ -71,17 +77,23 @@
 		display: flex;
 		/* justify-content: space-between; */
 		justify-content: center;
+		max-width: 64rem;
+		/* border-style: dashed; */
+		align-self: center;
+		min-width: 64rem;
+		max-width: 64rem;
+		
 	}
 
 	.title {
 		align-self: flex-start;
-		border-style: solid;
+		/* border-style: solid; */
 	}
 
-	.page-links {
+	/* .page-links {
 		align-self: flex-end;
 		border-style: solid;
-	}
+	} */
 
 	.color-mode {
 		width: 1.5em;
@@ -110,9 +122,9 @@
 		justify-content: space-between;
 		--background: rgba(255, 255, 255, 0.7);
 		font-family: var(--font-mono);
-		border-style: dotted;
+		/* border-style: dotted; */
 		flex: auto;
-		margin: 4% 11% 4% 11%;
+		margin: 6vh 0vw 0vh 0vw;
 	}
 
 	/* svg {
@@ -138,14 +150,36 @@
 		list-style: none;
 		/* background: var(--background); */
 		background-size: contain;
-		border-style: dotted;
+		/* border-style: dotted; */
 		flex: auto;
 	}
 
-	li {
+	.page-links 
+	{
+		/* border-style: solid; */
+		/* margin-left: 50px; */
+	}
+
+	li 
+	{
 		position: relative;
 		height: 100%;
 		/* border-style: dotted; */
+		/* padding-left: 2vw; */
+		padding-right: 2.5vw;
+	}
+
+	.no-padding
+	{
+		padding: 0;
+		font-weight: 100;
+	}
+
+	.cecil 
+	{
+		font-style: normal;
+		font-weight: 100;
+		font-size: 1.2rem;
 	}
 
 	li[aria-current='page']::before {
@@ -164,12 +198,12 @@
 		display: flex;
 		height: 100%;
 		align-items: center;
-		padding: 0 0.5rem;
+		/* padding: 0 0.5rem; */
 		color: var(--color-text);
-		font-weight: 700;
+		font-weight: 500;
 		font-size: 1rem;
 		text-transform: lowercase;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.05em;
 		text-decoration: none;
 		transition: color 0.2s linear;
 		/* border-style: dotted; */
@@ -177,5 +211,15 @@
 
 	a:hover {
 		color: var(--color-theme-1);
+	}
+
+	:global(body) {
+		background-color: #F1F1F1;
+		color: #221D1A;
+		transition: background-color 0.3s;
+	}
+	:global(body.dark-mode) {
+		background-color: #221D1A;
+		color: #F1F1F1;
 	}
 </style>
