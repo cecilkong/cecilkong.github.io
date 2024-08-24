@@ -22,7 +22,7 @@
 </p>
 
 <div class="gallery">
-    <div class="art-col">
+    <div class="art-col pad-right">
         <img src={restaurant} alt="Art" />
         <img src={girl_purple} alt="Art" />
         <img src={georgia} alt="Art" />
@@ -32,7 +32,7 @@
         <img src={flower_wall} alt="Art" />
         <img src={hotel} alt="Art" />
     </div>
-    <div class="art-col">
+    <div class="art-col pad-left">
         <img src={living_room} alt="Art" />
         <img src={sxr} alt="Art" />
         <img src={poses} alt="Art" />
@@ -64,5 +64,13 @@
 		justify-content: top;
         width: 100%;
         flex: 0.4;
+    }
+
+    .pad-left {
+        padding-left: 1%;
+    }
+
+    .pad-right {
+        padding-right: 1%;
     }
 </style>
