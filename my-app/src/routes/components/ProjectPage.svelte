@@ -51,6 +51,7 @@
 		/* justify-content: space-between; */
 		border-style: dotted;
 		background-color: #E5E4E4;
+        margin: 2vh 2vw 2vh 2vw;
     }
 
     .summary 

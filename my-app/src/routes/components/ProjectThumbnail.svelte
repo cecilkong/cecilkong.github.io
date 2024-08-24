@@ -34,8 +34,7 @@
     {
         display: flex;
         flex-direction: row;
-		/* justify-content: space-between; */
-		border-style: dotted;
+		/* border-style: dotted; */
 		background-color: #E5E4E4;
     }
 
@@ -44,14 +43,19 @@
 		width: 65%;
 		height: 220px;
 		overflow: hidden;
-		border-style: dotted;
+		/* border-style: dotted; */
     }
+
+    :global(.proj-container.dark-mode) {
+		background-color: #221D1A;
+		color: #F1EDE7;
+	}
 
 	.proj-desc
     {
-		border-style: dotted;
+		/* border-style: dotted; */
 		width: 35%;
 		text-align: end;
-        margin: 0% 2% 0% 2%;
+        margin: 1% 3% 1% 3%;
     }
 </style>
