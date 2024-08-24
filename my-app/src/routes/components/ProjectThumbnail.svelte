@@ -8,11 +8,14 @@
 	export let title;
 	export let role;
 	export let time;
+    export let page_link;
 </script>
 
 <div class="proj-container">
     <div class="proj-thumbnail">
-        <img src={image} alt="{title} Thumbnail" />
+        <a href={page_link}>
+            <img src={image} alt="{title} Thumbnail" />
+        </a>
     </div>
     <div class="proj-desc">
         <p>{title}</p>
