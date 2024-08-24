@@ -2,6 +2,8 @@
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
+	import star_dark from '$lib/images/nav/star-dark.png'
+	import star_light from '$lib/images/nav/star-light.png'
 </script>
 
 <header>
@@ -24,7 +26,7 @@
 		</div>
 		<div class="page-links">
 			<ul>
-				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+				<!-- <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 					<a href="/">Home</a>
 				</li>
 				<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
@@ -32,6 +34,9 @@
 				</li>
 				<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
 					<a href="/sverdle">Sverdle</a>
+				</li> -->
+				<li aria-current={$page.url.pathname === '/home' ? 'page' : undefined}>
+					<a href="/home">projects</a>
 				</li>
 				<li aria-current={$page.url.pathname === '/2D' ? 'page' : undefined}>
 					<a href="/2D">2D</a>
@@ -41,6 +46,11 @@
 				</li>
 				<li aria-current={$page.url.pathname === '/my-about' ? 'page' : undefined}>
 					<a href="/my-about">About</a>
+				</li>
+				<li aria-current={$page.url.pathname === '/home' ? 'page' : undefined}>
+					<a href="/home">
+						<img src={star_dark} class="color-mode" alt="Light/Dark Mode Toggle Icon" />
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -72,6 +82,10 @@
 		align-self: flex-end;
 		border-style: solid;
 	}
+
+	.color-mode {
+		width: 1.5em;
+	}
 	/* .corner {
 		width: 3em;
 		height: 3em;
@@ -98,7 +112,7 @@
 		font-family: var(--font-mono);
 		border-style: dotted;
 		flex: auto;
-		margin: 4% 12% 4% 12%;
+		margin: 4% 11% 4% 11%;
 	}
 
 	/* svg {
@@ -153,7 +167,7 @@
 		padding: 0 0.5rem;
 		color: var(--color-text);
 		font-weight: 700;
-		font-size: 0.8rem;
+		font-size: 1rem;
 		text-transform: lowercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
