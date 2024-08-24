@@ -4,7 +4,7 @@
 </svelte:head>
 
 <script lang>
-	import ProjectThumbnail from '../ProjectThumbnail.svelte'
+	import ProjectThumbnail from '../components/ProjectThumbnail.svelte'
 	import mango from '$lib/images/projects/mango.png'
     import gma_green from '$lib/images/projects/gma-green.png'
     import shade_shift from '$lib/images/projects/shade-shift.png'
@@ -25,6 +25,7 @@
 			title="Mango Goes To Mewsic School" 
 			role="Co-Developer" 
 			time="january 2023 - june 2023" 
+			page_link="/projects/mango"
 		/>
 	</div>
 	<div class="thumbnail">
@@ -33,6 +34,7 @@
 			title="grandma green" 
 			role="concept artist" 
 			time="june 2022 - june 2023" 
+			page_link="/projects/grandma-green"
 		/>
 	</div>
 	<div class="thumbnail">
@@ -41,6 +43,7 @@
 			title="saleblazers" 
 			role="gameplay programming intern" 
 			time="may 2023 - august 2023" 
+			page_link="/projects/saleblazers"
 		/>
 	</div>
 	<div class="thumbnail">
@@ -49,6 +52,7 @@
 			title="shade shift" 
 			role="programmer, designer" 
 			time="july 2022" 
+			page_link="/projects/shade-shift"
 		/>
 	</div>
 	<div class="thumbnail">
@@ -57,6 +61,7 @@
 			title="scare-crow" 
 			role="gameplay programmer" 
 			time="june 2024 - current" 
+			page_link="/projects/scare-crow"
 		/>
 	</div>
 </div>
