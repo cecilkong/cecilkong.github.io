@@ -17,7 +17,7 @@
     import sxr from '$lib/images/2d/sxr.png'
 </script>
 
-<p>
+<p class="intro">
     2D works
 </p>
 
@@ -40,6 +40,10 @@
 </div>
 
 <style>
+    .intro {
+		margin: 10vh 0vw 5vh 0vw;
+	}
+
 	img {
         align-self: center;
         width: 100%;
@@ -48,22 +52,17 @@
 
     .gallery {
         /* border-style: dotted; */
-        /* margin: 15% 4% 15% 4%; */
         display: flex;
         flex-direction: row;
 		justify-content: center;
-        /* flex: 0.2;
-		align-items: center; */
     }
 
     .art-col {
-        /* margin: 15% 4% 15% 4%; */
+        /* border-style: dotted; */
         display: flex;
         flex-direction: column;
 		justify-content: top;
         width: 100%;
-        flex: 0.3;
-        margin: 1%;
-		/* align-items: center; */
+        flex: 0.4;
     }
 </style>
