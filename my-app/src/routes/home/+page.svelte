@@ -4,6 +4,7 @@
 </svelte:head>
 
 <script lang>
+	import ProjectThumbnail from '../ProjectThumbnail.svelte'
 	import mango from '$lib/images/projects/mango.png'
     import gma_green from '$lib/images/projects/gma-green.png'
     import shade_shift from '$lib/images/projects/shade-shift.png'
@@ -18,103 +19,60 @@
 </p>
 
 <div class="projects">
-	<div class="proj-container">
-		<div class="proj-thumbnail">
-			<img src={mango} alt="Mango Goes To Mewsic School Thumbnail" />
-		</div>
-		<div class="proj-desc">
-			<p>mango goes to mewsic school</p>
-			<p>co-developer</p>
-			<p>january 2023 - june 2023</p>
-		</div>
+	<div class="thumbnail">
+		<ProjectThumbnail
+			image={mango} 
+			title="Mango Goes To Mewsic School" 
+			role="Co-Developer" 
+			time="january 2023 - june 2023" 
+		/>
 	</div>
-
-	<div class="proj-container">
-		<div class="proj-thumbnail">
-			<img src={gma_green} alt="Grandma Green Thumbnail" />
-		</div>
-		<div class="proj-desc">
-			<p>grandma green</p>
-			<p>concept artist</p>
-			<p>june 2022 - may 2023</p>
-		</div>
+	<div class="thumbnail">
+		<ProjectThumbnail 
+			image={gma_green} 
+			title="grandma green" 
+			role="concept artist" 
+			time="june 2022 - june 2023" 
+		/>
 	</div>
-
-	<div class="proj-container">
-		<div class="proj-thumbnail">
-			<img src={saleblazers} alt="Saleblazers Thumbnail" />
-		</div>
-		<div class="proj-desc">
-			<p>saleblazers</p>
-			<p>gameplay programming intern</p>
-			<p>may 2023 - july 2023</p>
-		</div>
+	<div class="thumbnail">
+		<ProjectThumbnail 
+			image={saleblazers} 
+			title="saleblazers" 
+			role="gameplay programming intern" 
+			time="may 2023 - august 2023" 
+		/>
 	</div>
-
-	<div class="proj-container">
-		<div class="proj-thumbnail">
-			<img src={shade_shift} alt="Shade Shift Thumbnail" />
-		</div>
-		<div class="proj-desc">
-			<p>shade shift</p>
-			<p>programmer, designer</p>
-			<p>july 2022</p>
-		</div>
+	<div class="thumbnail">
+		<ProjectThumbnail 
+			image={shade_shift} 
+			title="shade shift" 
+			role="programmer, designer" 
+			time="july 2022" 
+		/>
 	</div>
-
-	<div class="proj-container">
-		<div class="proj-thumbnail">
-			<img src={scare_crow} alt="Scare Crow Thumbnail" />
-		</div>
-		<div class="proj-desc">
-			<p>scare crow</p>
-			<p>programmer, artist</p>
-			<p>june 2024 - present</p>
-		</div>
+	<div class="thumbnail">
+		<ProjectThumbnail 
+			image={scare_crow} 
+			title="scare-crow" 
+			role="gameplay programmer" 
+			time="june 2024 - current" 
+		/>
 	</div>
 </div>
 
 
 <style>
-	img {
-        align-self: center;
-        width: 100%;
-		/* height: 37%; */
-        /* margin: 3%; */
-		/* overflow: hidden; */
+	.thumbnail {
+		margin: 1% 0% 1% 0%;
 	}
-
-    .proj-container
-    {
-        display: flex;
-        flex-direction: row;
-		/* justify-content: space-between; */
-		border-style: dotted;
-		background-color: #E5E4E4;
-    }
-
-    .proj-thumbnail
-    {
-		width: 65%;
-		height: 220px;
-		overflow: hidden;
-		border-style: dotted;
-
-    }
-
-	.proj-desc
-    {
-		border-style: dotted;
-		width: 35%;
-		text-align: end;
-
-        margin: 0% 2% 0% 2%;
-        /* display: flex;
-        flex-direction: column;
-		justify-content: top;
-        width: 100%;
-        flex: 0.3;
-        margin: 1%; */
-		/* align-items: center; */
-    }
+	:global(body) {
+		background-color: #F1EDE7;
+		color: #221D1A;
+		transition: background-color 0.3s
+	}
+	:global(body.dark-mode) {
+		background-color: #221D1A;
+		color: #F1EDE7;
+	}
 </style>
