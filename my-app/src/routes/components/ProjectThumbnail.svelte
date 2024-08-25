@@ -1,5 +1,6 @@
 <script>
 	export let image;
+    export let gif;
 	export let title;
 	export let role;
 	export let time;
@@ -12,9 +13,13 @@
                 <img src={image} alt="{title} Thumbnail" />
         </div>
         <div class="proj-desc">
-            <p>{title}</p>
-            <p>{role}</p>
-            <p>{time}</p>
+            <div class="title">
+                <p>{title}</p>
+            </div>
+            <div class="info">
+                <p>{role}<br/>{time}</p>
+                <!-- <p>{time}</p> -->
+            </div>
         </div>
     </div>
 </a>
@@ -30,7 +35,25 @@
         display: flex;
         flex-direction: row;
 		background-color: #E5E4E4;
+        transition: box-shadow 0.4s;
     }
+
+    .proj-container:hover {
+        /* border-style: dotted; */
+        display: flex;
+        flex-direction: row;
+		background-color: #E5E4E4;
+        box-shadow: 5px 5px 10px 0 rgb(150, 154, 172), 0 17px 50px 0 rgba(0, 0, 0, 0.196);
+        transition: box-shadow 0.4s;
+    }
+
+    :global(body.dark-mode) .proj-container:hover {
+        display: flex;
+        flex-direction: row;
+		background-color: rgb(30, 30, 34);
+        box-shadow: 5px 5px 10px 0 rgb(0, 0, 0), 0 17px 50px 0 rgba(0, 0, 0, 0.196);
+        transition: box-shadow 0.4s;
+	}
 
     .proj-thumbnail {
         /* border-style: dotted; */
@@ -39,9 +62,9 @@
 		overflow: hidden;
     }
 
-    :global(.proj-container.dark-mode) {
-		background-color: #221D1A;
-		color: #F1EDE7;
+    :global(body.dark-mode) .proj-container {
+        background-color: rgb(30, 30, 34);
+		color: #F1EDE7; 
 	}
 
 	.proj-desc {
@@ -49,5 +72,16 @@
 		width: 35%;
 		text-align: end;
         margin: 1% 3% 1% 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+
+    /* .title {
+        border-style: dotted;
+    }
+
+    .info {
+        border-style: dotted;
+    } */
 </style>

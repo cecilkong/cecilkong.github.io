@@ -205,13 +205,15 @@
 		color: var(--color-theme-1);
 	}
 
-	:global(body) {
+	:global(body) nav a {
 		background-color: #F1F1F1;
-		color: #221D1A;
+		color: #131316;
 		transition: background-color 0.3s;
 	}
-	:global(body.dark-mode) {
-		background-color: #221D1A;
+
+	:global(body.dark-mode) nav a {
+		background-color: #131316;
 		color: #F1F1F1;
+		transition: background-color 0.3s;
 	}
 </style>

@@ -21,8 +21,14 @@
         cursor: pointer;
     }
 
+    :global(body) button {
+        background-color: #F1F1F1;
+        color: 131316;
+        transition: background-color 0.3s;
+    }
+
     :global(body.dark-mode) button {
-        background-color: #221D1A;
+        background-color: #131316;
         color: #F1F1F1;
         transition: background-color 0.3s;
     }
