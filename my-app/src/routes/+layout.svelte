@@ -41,7 +41,7 @@
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
-		margin-top: 6vh;
+		margin-top: 12vh;
 	}
 
 	footer a {
