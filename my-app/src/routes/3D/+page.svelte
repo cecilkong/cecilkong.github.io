@@ -23,33 +23,55 @@
 <p>modeling, vfx, animation</p>
 
 <div class="gallery">
-    <div class="vfx">
-        <p>VFX</p>
+    <div class="row-section">
+        <p class="section-title">VFX</p>
         <!-- <img src={fireplace} alt="Art" /> -->
-        <img src={special} alt="Art" />
-        <p>Animation, greenscreen, rotoscopes, color grading, particles, and final composite done with NukeX. 
-            Flame VFX made in Maya. Models used under CC. 2024</p>
+         <div class="vfx">
+            <img class="vfx-vid" src={special} alt="Art" />
+            <p class="vfx-desc">Animation, greenscreen, rotoscopes, 
+                color grading, particles, and final composite done with NukeX. 
+                Flame VFX made in Maya. Models used under CC. 2024</p>
+        </div>
     </div>
 
-    <div class="modeling">
-        <p>Low Poly Environment</p>
-        <img src={special} alt="Art" />
-        <!-- <img src={env_video} alt="Art" /> -->
-        <img src={env_1} alt="Art" />
-        <img src={env_2} alt="Art" />
-        <img src={env_3} alt="Art" />
+    <div class="row-section">
+        <p class="section-title">Low Poly Environment</p>
+        <div class="modeling">
+            <div class="env">
+                <p class="env-desc">Animation, greenscreen, rotoscopes, 
+                    color grading, particles, and final composite done with NukeX. 
+                    Flame VFX made in Maya. Models used under CC. 2024</p>
+                <div class="env-vid">
+                    <img src={special} alt="Art" />
+                    <!-- <img src={env_video} alt="Art" /> -->
+                </div>
+            </div>
+            <div class="env-photos">
+                <img src={env_1} alt="Art" />
+                <img src={env_2} alt="Art" />
+                <img src={env_3} alt="Art" />
+            </div>
+        </div>
     </div>
 
-    <div class="animation">
-        <p>Character Moveset</p>
-        <img src={idle} alt="Art" />
-        <img src={walk} alt="Art" />
-        <img src={attack} alt="Art" />
-        <img src={special} alt="Art" />
-        <img src={jump} alt="Art" />
-        <img src={death} alt="Art" />
-        <img src={damaged} alt="Art" />
-        <img src={run} alt="Art" />
+    <div class="row-section">
+        <p class="section-title">Character Moveset</p>
+        <div class="anim">
+            <div class="anim-col left">
+                <img src={idle} alt="Art" />
+                <img src={walk} alt="Art" />
+                <img src={attack} alt="Art" />
+            </div>
+            <div class="anim-col">
+                <img src={special} alt="Art" />
+                <img src={jump} alt="Art" />
+                <img src={death} alt="Art" />
+            </div>
+            <div class="anim-col">
+                <img src={damaged} alt="Art" />
+                <img src={run} alt="Art" />
+            </div>
+        </div>
     </div>
 </div>
 
@@ -63,27 +85,73 @@
         flex-direction: column;
 		justify-content: center;
     }
+    
+    .row-section {
+        /* border-style: dotted; */
+        margin: 3vh 0vw 7vh 0vw;
+    }
+
+    .section-title {
+        margin-bottom: 3%;
+    }
 
     .vfx {
-        border-style: dotted;
-        align-self: flex-start;
+        display: flex;
+        flex-direction: row;
     }
+
+    .vfx-desc {
+        /* border-style: dotted; */
+        margin: 0vh 0vw 0vh 3vw;
+    }
+
+    /* .vfx-vid {
+        border-style: dotted;
+    } */
 
     .modeling {
-        border-style: dotted;
-    }
-
-    .animation {
-        border-style: dotted;
-        align-self: flex-end;
-    }
-
-    /* .art-col {
         display: flex;
         flex-direction: column;
-		justify-content: top;
-        width: 100%;
-        flex: 0.4;
-        margin: 1%;
-    } */
+    } 
+
+    .env 
+    {
+        /* border-style: dotted; */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .env-desc {
+        /* border-style: dotted; */
+        margin: 0vh 3vw 0vh 0vw;
+    }
+
+    .env-photos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3%;
+    }
+
+    .env-photos img {
+        width: 32%;
+    }
+
+    .anim {
+        /* border-style: dotted; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .anim-col {
+        /* border-style: dotted; */
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+    }
+
+    .anim-col img {
+        margin-bottom: 5%;
+    }
 </style>
