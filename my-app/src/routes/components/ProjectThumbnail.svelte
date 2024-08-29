@@ -1,16 +1,39 @@
-<script>
-	export let image;
-    export let gif;
+<script lang="ts">
+	export let image: string;
+    export let gif: string;
 	export let title;
 	export let role;
 	export let time;
     export let page_link;
+  
+  let current_src = image;
+
+  function handleMouseEnter() {
+    current_src = gif;
+  }
+
+  function handleMouseLeave() {
+    current_src = image;
+  }
+
+  function handleKeyDown(event: KeyboardEvent) {
+    if (event.key === 'Enter' || event.key === 'Space') {
+      current_src = current_src === image ? gif : image;
+    }
+  }
 </script>
 
 <a href={page_link}>
-    <div class="proj-container">
+    <div 
+        class="proj-container" 
+        role="button" 
+        tabindex="0" 
+        on:keydown={handleKeyDown}
+        aria-label="Image hover effect"
+        on:mouseenter={handleMouseEnter} 
+        on:mouseleave={handleMouseLeave}>
         <div class="proj-thumbnail">
-                <img src={image} alt="{title} Thumbnail" />
+            <img src={current_src} alt="{title} Thumbnail"/>
         </div>
         <div class="proj-desc">
             <div class="title">
@@ -18,7 +41,6 @@
             </div>
             <div class="info">
                 <p>{role}<br/>{time}</p>
-                <!-- <p>{time}</p> -->
             </div>
         </div>
     </div>
