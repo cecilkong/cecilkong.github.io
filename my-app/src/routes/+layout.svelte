@@ -13,6 +13,7 @@
 	<footer>
 		<p>© cecil kong 2025</p>
 	</footer>
+	<div class="line"></div>
 </div>
 
 <style>
@@ -22,7 +23,6 @@
 		flex-direction: column;
 		min-height: 100vh;
 	}
-
 
 	main {
 		/* border-style: dotted; */
@@ -36,16 +36,25 @@
 	}
 
 	footer {
+		/* border-style: dotted; */
 		display: flex;
+		flex: 1;
+		max-width: 64rem;
+		box-sizing: border-box;
+		width: 100%;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-		margin-top: 12vh;
+		padding: 10px;
+		margin: 0 auto;
 	}
 
-	footer a {
-		font-weight: bold;
+	.line {
+  		border-bottom: 1.2px solid #000000;
+		margin-bottom: 4vh;
+	}
+
+	:global(body.dark-mode) .line {
+  		border-bottom: 1.2px solid #ffffff;
+		margin-bottom: 4vh;
 	}
 
 	@media (min-width: 480px) {
