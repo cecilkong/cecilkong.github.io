@@ -22,15 +22,15 @@
 </script>
 
 <div class="intro">
-	<p class="name">
+	<!-- <p class="name">
 		hi, i'm cecil.
-	</p>
-	<p class="brief">
+	</p> -->
+	<!-- <p class="brief">
 		gameplay programmer <br/>
 		software engineer <br/>
 		artist <br/>
 		computer science games @ USC
-	</p>
+	</p> -->
 </div>
 
 <div class="projects">
@@ -108,19 +108,25 @@
 		margin: 2vh 0vw 2vh 0vw;
 	}
 
-	.name {
-		/* margin: 0vh 0vw 5vh 0vw; */
+	/* .name {
+		margin: 0vh 0vw 5vh 0vw;
 		font-weight: 900;
 		font-size: 105%;
-	}
+	} 
+	*/
 
-	.brief {
+	/* .brief {
 		font-weight: 100;
 		font-size: 100%;
+	} */
+
+	.projects 
+	{
+		margin-top: 9%;
 	}
 
 	.thumbnail {
-		margin: 1% 0% 1% 0%;
+		margin: 2% 0% 2% 0%;
 	}
 
 	:global(body) {

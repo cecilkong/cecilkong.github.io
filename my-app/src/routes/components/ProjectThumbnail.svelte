@@ -58,6 +58,7 @@
         display: flex;
         flex-direction: row;
 		background-color: #E5E4E4;
+        color: #000000; 
         transition: box-shadow 0.4s;
     }
 
@@ -106,7 +107,7 @@
         /* border-style: dotted; */
         font-weight: 900;
         font-size: 115%;
-        color: rgb(0, 0, 0);
+        /* color: rgb(0, 0, 0); */
     }
     /*
     .info {
