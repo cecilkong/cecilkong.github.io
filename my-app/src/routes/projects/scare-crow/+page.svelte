@@ -4,7 +4,7 @@
 </svelte:head>
 
 <script lang="ts">
-    import scare_crow from '$lib/images/projects/scare-crow.png'
+    import scare_crow from '$lib/images/projects/sc1.png'
     import ProjectPage from '../../components/ProjectPage.svelte';
     let desc = 
         `wip scarecrow`;

@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>© cecil kong 2024</p>
+		<p>© cecil kong 2025</p>
 	</footer>
 </div>
 

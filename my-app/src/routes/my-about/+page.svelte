@@ -12,18 +12,20 @@
         <img src={pfp_fallback} alt="About Photo" />
     </div>
     <div class="bio">
-        <p>
-            <strong>Hi, I'm Cecil.</strong>
-        </p>
-        <p>
-            I’m a senior studying <strong>Computer Science</strong> with an emphasis in games along with a minor in
-            <strong>3D Animation</strong> at the <strong>University of Southern California</strong>.
-            While I am primarily interested in gameplay programming, I've been making digital art
-            for several years—I often contribute a mix of both programming and art in many of my projects,
-            so you'll see some of both highlighted here. Ultimately, regardless of the medium,
-            I am dedicated to bringing creative ideas to life! In my free time, I enjoy longboard dancing,
-            journaling, and listening to music.
-        </p>
+        <div class="text">
+            <p class="name">
+                <strong>Hi, I'm Cecil.</strong>
+            </p>
+            <p>
+                I’m a senior studying <strong>Computer Science</strong> with an emphasis in games 
+                at the <strong>University of Southern California</strong>.
+                While I am primarily interested in gameplay programming, I've been making digital art
+                for several years—I often contribute a mix of both programming and art in many of my projects,
+                so you'll see some of both highlighted here. Ultimately, regardless of the medium,
+                I am dedicated to bringing creative ideas to life! In my free time, I enjoy longboard dancing,
+                journaling, and listening to music.
+            </p>
+        </div>
 
         <!-- <p class="role">
             Current <br/>
@@ -54,8 +56,9 @@
 
 <style>
     strong {
-        font-weight: bolder;
-        color:rgb(138, 146, 181)
+        font-weight: 900;
+        color:rgb(135, 156, 39);
+        font-size: 105%;
     }
 
 	img {
@@ -82,27 +85,42 @@
         margin: 0vh 0vw auto 0vw;
         align-self: flex-end;
         margin-left: 5vw;
+        font-weight: 100;
+    }
+
+    .text {
+        /* border-style: dotted; */
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+    }
+
+    .name {
+        /* border-style: dotted; */
+        margin-top: 0vh;
+        margin-bottom: 0vh;
     }
 
     .links {
+        /* border-style: dotted; */
         display: flex;
         flex-direction: column;
+        width: 20vw;
     }
 
     a {
         border-style: solid;
-        width: 20vw;
-        background-color: rgb(138, 146, 181);
-        border-color: rgb(138, 146, 181);
+        height: 2.2vh;
+        background-color: rgb(135, 156, 39);
+        border-color: rgb(135, 156, 39);
         color: #F1EDE7;
-        margin: 0vh 0vw 1vh 0vw;
-        padding: 1vh 1vw 1vh 1vw;
+        margin: 0.5vh 0vw 0.5vh 0vw;
+        padding: 1vh 1vw 1.5vh 1vw;
     }
 
     a:hover {
         border-style: solid;
         background-color: #F1EDE7;
-        color: rgb(138, 146, 181);
+        color: rgb(135, 156, 39);
         box-shadow: 5px 5px 10px 0 rgb(138, 146, 181), 0 17px 50px 0 rgba(0, 0, 0, 0.196);
     }
 

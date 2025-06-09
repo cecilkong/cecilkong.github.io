@@ -3,6 +3,7 @@
     export let gif: string;
 	export let title;
 	export let role;
+    export let tools;
 	export let time;
     export let page_link;
   
@@ -40,7 +41,7 @@
                 <p>{title}</p>
             </div>
             <div class="info">
-                <p>{role}<br/>{time}</p>
+                <p>{role}<br/>{tools}<br/>{time}</p>
             </div>
         </div>
     </div>
@@ -97,12 +98,17 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        font-weight: 100;
+        font-size: 90%;
     }
 
-    /* .title {
-        border-style: dotted;
+    .title {
+        /* border-style: dotted; */
+        font-weight: 900;
+        font-size: 115%;
+        color: rgb(0, 0, 0);
     }
-
+    /*
     .info {
         border-style: dotted;
     } */

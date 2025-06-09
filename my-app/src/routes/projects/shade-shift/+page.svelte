@@ -25,6 +25,13 @@
     description = {desc}
 />
 
+Specifically, I
+
+programmed map shifting & basic platforming mechanics including wall-jumping & sliding
+
+led team meetings, organized milestones, assigned programming and design tasks, conducted playtests and compiled playtesting notes
+
+designed and implemented 7 levels
 
 <style>
 
