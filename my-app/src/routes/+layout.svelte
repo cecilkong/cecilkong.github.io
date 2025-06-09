@@ -1,15 +1,20 @@
 <script>
 	import Header from './Header.svelte';
 	import '../app.css';
+	import { fade } from 'svelte/transition';
+	import { page } from '$app/stores';
+	import { linear, quadIn, quadOut } from 'svelte/easing';
 </script>
 
 <div class="app">
 	<Header />
-
 	<main>
-		<slot />
+			{#key $page.url.pathname}
+				<div in:fade={{ duration: 800, easing: quadOut}}>
+				<slot />
+				</div>
+			{/key}
 	</main>
-
 	<footer>
 		<p>© cecil kong 2025</p>
 	</footer>
@@ -33,6 +38,7 @@
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
+		overflow-x: hidden;
 	}
 
 	footer {
