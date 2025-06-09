@@ -55,7 +55,8 @@
 				</li>
 				<li class="no-padding">
 					<Button>
-						<img src={star_dark} class="color-mode" alt="Light/Dark Mode Toggle Icon" />
+						<img src={star_dark} class="color-mode dark-icon" alt="Light/Dark Mode Toggle Icon" />
+						<img src={star_light} class="color-mode light-icon" alt="Light/Dark Mode Toggle Icon" />
 					</Button>
 				</li>
 			</ul>
@@ -215,5 +216,19 @@
 		background-color: #131316;
 		color: #F1F1F1;
 		transition: background-color 0.3s;
+	}
+
+	.light-icon {
+		display: none;
+	}
+	.dark-icon {
+		display: inline;
+	}
+
+	:global(body.dark-mode) .light-icon {
+		display: inline;
+	}
+	:global(body.dark-mode) .dark-icon {
+		display: none;
 	}
 </style>
